@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tilemaps</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #controls {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+      }
+      #controls > button {
+        padding: 5px 8px;
+      }
+      canvas {
+        background: blue;
+        position: relative;
+        left: 50%;
+        translate: -50% 0;
+        height: 320px;
+        width: 320px;
+        image-rendering: pixelated;
+        image-rendering: crisp-edges;
+      }
+      #tilemap {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="controls">
+      <button id="level1button">Level 1</button>
+      <button id="level2button">Level 2</button>
+      <button id="level3button">Level 3</button>
+      <button id="debugButton">Debug</button>
+    </div>
+
+    <canvas id="canvas1"> </canvas>
+    <img src="tilemap1simple.png" id="tilemap" alt="background" />
+
+    <script src="script.js
+    "></script>
+  </body>
+</html>
